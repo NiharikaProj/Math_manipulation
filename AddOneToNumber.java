@@ -5,10 +5,8 @@ public class AddOneToNumber {
 	public static void main(String[] args) {
 	 	
 		List<Integer> Value = new ArrayList<Integer>();
-		Value.add(0);
-		Value.add(9);
-		Value.add(9);
-		Value.add(9);
+		
+		
 		Value.add(8);
 		
 		System.out.println("Input array: " + Value);
@@ -24,6 +22,14 @@ public class AddOneToNumber {
 		
 		
 		int length = value.size();
+		if (length<2)
+		{
+			int currval=value.get(0);
+			currval=currval+1;
+			value.set(0, currval);
+		}
+		if (length>2)
+		{
 		int nextVal = value.get(length-2);;
 		int lastVal = value.get(length-1);
 		if (lastVal < 9)
@@ -58,6 +64,7 @@ for (int i =length-1; i>0; i--)
 		
 	
 }	 
+		}
 
 if (value.get(0)==10)
 {
@@ -65,6 +72,7 @@ if (value.get(0)==10)
 	value.set(1, 0);
 
 }
+		
 	
 		return value;
 	}
