@@ -13,7 +13,7 @@ public class Math_fibonacci {
 		System.out.println("n is: "+n);
 		System.out.println(i + "\n"+j);
 		
-		for(k=0;k<=n;k++)
+		for(k=0;k<n-2;k++)
 		{
 		l=i+j;
 		i=j;
