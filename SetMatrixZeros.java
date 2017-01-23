@@ -56,7 +56,7 @@ public class SetMatrixZeros {
 		{
 			if(matrix[i][j]==0)
 			{
-			System.out.println(matrix[i][j] + " is at position: "+ i+" "+j);
+			//System.out.println(matrix[i][j] + " is at position: "+ i+" "+j);
 			row.add(i);
 			col.add(j);
 			}
@@ -72,11 +72,11 @@ public class SetMatrixZeros {
 
 	private static void fillCol(int[][] matrix, List<Integer> col,int rownum) {
      int length = col.size();
-     System.out.println("length of col: "+length);
+    // System.out.println("length of col: "+length);
      for (int l=length-1;l>=0;l--)
      {  
     	 int cl = col.get(l);
-    	 System.out.println("col: "+cl);
+    	 //System.out.println("col: "+cl);
 		for (int i=0;i<rownum;i++)
 		{
 			matrix[i][cl]=0;
@@ -88,11 +88,11 @@ public class SetMatrixZeros {
 
 	private static void fillRow(int[][] matrix, List<Integer> row,int colnum) {
 		int length = row.size();
-		System.out.println("length of row: "+length);
+		//System.out.println("length of row: "+length);
 		for (int l=length-1;l>=0;l--)
 	     {  
 	    	 int rw = row.get(l);
-	    	 System.out.println("row: "+rw);
+	    	 //System.out.println("row: "+rw);
 			for (int i=0;i<colnum;i++)
 			{
 				matrix[rw][i]=0;
