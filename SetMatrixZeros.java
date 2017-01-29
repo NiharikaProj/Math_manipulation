@@ -9,15 +9,15 @@ public class SetMatrixZeros {
 
 	public static void main(String[] args) throws IOException {
 		List<Integer> Value = new ArrayList<Integer>();
-		Value.add(0);
 		Value.add(1);
-		Value.add(2);
-		Value.add(1);
-		Value.add(2);
-		Value.add(3);
 		Value.add(1);
 		Value.add(0);
-		Value.add(3);
+		Value.add(1);
+		Value.add(1);
+		Value.add(0);
+		Value.add(1);
+		Value.add(1);
+		Value.add(1);
 
 		int rownum = 3, colnum = 3;
 
